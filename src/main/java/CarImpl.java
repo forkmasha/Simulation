@@ -1,4 +1,4 @@
-public class CarImpl implements Car{
+public class CarImpl implements Car {
 
     private String carModel;
     private double chargingTime;
@@ -10,10 +10,9 @@ public class CarImpl implements Car{
 
     @Override
     public void charge() {
-        try{
-            Thread.sleep((long)(chargingTime*1000));
-        }
-        catch (InterruptedException e){
+        try {
+            Thread.sleep((long) (chargingTime * 1000));
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
